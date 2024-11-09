@@ -1,0 +1,28 @@
+@import '../../styles/colors';
+
+@mixin bp($point) {
+  @if $point == tablet {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 375px) { @content; }
+  }
+}
+
+.Question {
+  h2 {
+    margin: 15px;
+    text-align: left;
+    text-align: center;
+  }
+  
+  p {
+    margin: 15px;
+    white-space: pre-wrap;
+    text-align: center;
+  }
+
+  .CrudBtnsContainer {
+    margin: 40px;
+  }
+}

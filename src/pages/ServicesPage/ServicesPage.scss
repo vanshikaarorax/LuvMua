@@ -1,0 +1,21 @@
+.ServicesPage {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; // This ensures everything is centered vertically and horizontally
+  
+  // Adding styling for the map container to ensure it's visible and properly sized
+  #map-container {
+    width: 100%;
+    height: 500px; // Ensure the map has a fixed height
+    max-width: 1000px; // Optional: Limit the width of the map to make it look better on larger screens
+    margin-top: 20px; // Optional: Add space above the map
+  }
+
+  // Can't figure out why this is needed to get it centered.
+  // This will apply padding on the left side of the heading
+  h1 {
+    padding-left: 9px;
+  }
+}

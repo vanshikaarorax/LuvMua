@@ -1,0 +1,35 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    padding-left: 1%;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: flex-end;
+
+    .reset-btn {
+      margin-right: 10px;
+      border: 1px solid $faceBusiness;
+      background-color: transparent;
+      color: $faceBusiness;
+
+      &:hover {
+        border-width: 2px;
+      }
+
+      &:active {
+        border-width: 3px;
+      }
+    }
+  }
+
+  .editorial-contact-instruction {
+    margin: 0 0 20px 0;
+  }
+}

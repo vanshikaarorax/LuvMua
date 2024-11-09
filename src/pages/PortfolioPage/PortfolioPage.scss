@@ -1,0 +1,23 @@
+.PortfolioPage {
+  text-align: center;
+  h1 {
+   
+    padding-top: 50px; // Adjust the heading margin
+  }
+}
+
+.PortfolioColumns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.PortfolioColumn {
+  flex: 1;
+  padding: 20px;
+}
+
+.portfolio-thumbnail {
+  width: 100%;
+  margin: 10px 0;
+  cursor: pointer;
+}

@@ -1,0 +1,76 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+
+@mixin bp($point) {
+  @if $point == mobile {
+    @media (max-width: 520px) {
+      @content;
+    }
+  }
+}
+
+.Footer {
+  width: 80vw;
+  margin: 0 auto;
+  border-top: 1px solid $faceBusiness;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $classy;
+
+    span {
+      font-size: 12px;
+    }
+
+    .icon-link {
+      display: flex;
+      align-items: center;
+
+      a {
+        padding-left: 3px;
+      }
+
+      .BtnInstagram {
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        padding-right: 3px;
+        font-size: 16px;
+      }
+    }
+
+    a {
+      padding: 20px;
+    }
+  }
+
+  .copyright {
+    margin: 0 10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-family: $classy;
+    text-align: center;
+  }
+
+  .full-tnc {
+    display: inline;
+
+    @include bp(mobile) {
+      display: none;
+    }
+  }
+  
+  .small-tnc {
+    display: none;
+
+    @include bp(mobile) {
+      display: inline;
+    }
+  }
+}
