@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import { useSelector } from 'react-redux';
+=======
+>>>>>>> d1bd911 (Initial commit)
 import { Link } from 'react-router-dom';
 import logo from '../../media/l.png';
 import BtnBookNow from '../BtnBookNow/BtnBookNow';
 import BtnInstagram from '../BtnInstagram/BtnInstagram';
+<<<<<<< HEAD
 import BtnLogout from '../BtnLogout/BtnLogout';
+=======
+//import BtnLogout from '../BtnLogout/BtnLogout';
+>>>>>>> d1bd911 (Initial commit)
 import './Navbar.scss';
 
 function Navbar() {
@@ -14,11 +21,17 @@ function Navbar() {
   const [portfolioLinkClass, setPortfolioLinkClass] = useState('inactive');
   const [faqLinkClass, setFaqLinkClass] = useState('inactive');
   const [contactLinkClass, setContactLinkClass] = useState('inactive');
+<<<<<<< HEAD
   const [adminDashLinkClass, setAdminDashLinkClass] = useState('inactive');
 
   const token = useSelector((state) => state.tokenReducer.token);
 
   // there are better ways to do this but ran out of time
+=======
+  //const [adminDashLinkClass, setAdminDashLinkClass] = useState('inactive');
+  // const token = useSelector((state) => state.tokenReducer.token);
+
+>>>>>>> d1bd911 (Initial commit)
   const setLinkToActive = (event) => {
     event.persist();
     switch (event.target.pathname) {
@@ -28,7 +41,11 @@ function Navbar() {
         setPortfolioLinkClass('inactive');
         setFaqLinkClass('inactive');
         setContactLinkClass('inactive');
+<<<<<<< HEAD
         setAdminDashLinkClass('inactive');
+=======
+        // setAdminDashLinkClass('inactive');
+>>>>>>> d1bd911 (Initial commit)
         break;
       case '/services':
         setAboutMeLinkClass('inactive');
@@ -36,15 +53,25 @@ function Navbar() {
         setPortfolioLinkClass('inactive');
         setFaqLinkClass('inactive');
         setContactLinkClass('inactive');
+<<<<<<< HEAD
         setAdminDashLinkClass('inactive');
         break;
       case '/portfolio':
+=======
+        // setAdminDashLinkClass('inactive');
+        break;
+      case '/join-page':  // Update the case for the new path
+>>>>>>> d1bd911 (Initial commit)
         setAboutMeLinkClass('inactive');
         setServicesLinkClass('inactive');
         setPortfolioLinkClass('active');
         setFaqLinkClass('inactive');
         setContactLinkClass('inactive');
+<<<<<<< HEAD
         setAdminDashLinkClass('inactive');
+=======
+        // setAdminDashLinkClass('inactive');
+>>>>>>> d1bd911 (Initial commit)
         break;
       case '/faq':
         setAboutMeLinkClass('inactive');
@@ -52,7 +79,11 @@ function Navbar() {
         setPortfolioLinkClass('inactive');
         setFaqLinkClass('active');
         setContactLinkClass('inactive');
+<<<<<<< HEAD
         setAdminDashLinkClass('inactive');
+=======
+        // setAdminDashLinkClass('inactive');
+>>>>>>> d1bd911 (Initial commit)
         break;
       case '/contact':
         setAboutMeLinkClass('inactive');
@@ -60,6 +91,7 @@ function Navbar() {
         setPortfolioLinkClass('inactive');
         setFaqLinkClass('inactive');
         setContactLinkClass('active');
+<<<<<<< HEAD
         setAdminDashLinkClass('inactive');
         break;
       case '/admin':
@@ -70,13 +102,29 @@ function Navbar() {
         setContactLinkClass('inactive');
         setAdminDashLinkClass('active');
         break;
+=======
+        // setAdminDashLinkClass('inactive');
+        break;
+      // case '/admin':
+        // setAboutMeLinkClass('inactive');
+        // setServicesLinkClass('inactive');
+        // setPortfolioLinkClass('inactive');
+        // setFaqLinkClass('inactive');
+        // setContactLinkClass('inactive');
+        // setAdminDashLinkClass('active');
+        // break;
+>>>>>>> d1bd911 (Initial commit)
       default:
         setAboutMeLinkClass('inactive');
         setServicesLinkClass('inactive');
         setPortfolioLinkClass('inactive');
         setFaqLinkClass('inactive');
         setContactLinkClass('inactive');
+<<<<<<< HEAD
         setAdminDashLinkClass('inactive');
+=======
+        // setAdminDashLinkClass('inactive');
+>>>>>>> d1bd911 (Initial commit)
     }
   };
 
@@ -101,7 +149,11 @@ function Navbar() {
             className={aboutMeLinkClass}
             to="/about-me"
             onClick={setLinkToActive}
+<<<<<<< HEAD
             data-testid="nb-link-services"
+=======
+            data-testid="nb-link-about"
+>>>>>>> d1bd911 (Initial commit)
           >
             ABOUT
           </Link>
@@ -115,7 +167,11 @@ function Navbar() {
           </Link>
           <Link
             className={portfolioLinkClass}
+<<<<<<< HEAD
             to="/portfolio"
+=======
+            to="/join-page"  // Updated path
+>>>>>>> d1bd911 (Initial commit)
             onClick={setLinkToActive}
             data-testid="nb-link-portfolio"
           >
@@ -137,7 +193,11 @@ function Navbar() {
           >
             CONTACT
           </Link>
+<<<<<<< HEAD
           {token ? (
+=======
+          {/* {token ? (
+>>>>>>> d1bd911 (Initial commit)
             <div className="admin-nav-container">
               <Link
                 className={adminDashLinkClass}
@@ -151,7 +211,11 @@ function Navbar() {
                 <BtnLogout />
               </Link>
             </div>
+<<<<<<< HEAD
           ) : null}
+=======
+          ) : null} */}
+>>>>>>> d1bd911 (Initial commit)
         </div>
         <BtnBookNow customLink={''} />
         <BtnInstagram />
@@ -169,7 +233,11 @@ function Navbar() {
               <Link to="./services" onClick={animateHamburger}>
                 <li>SERVICES</li>
               </Link>
+<<<<<<< HEAD
               <Link to="./portfolio" onClick={animateHamburger}>
+=======
+              <Link to="./join-page" onClick={animateHamburger}>  {/* Updated path */}
+>>>>>>> d1bd911 (Initial commit)
                 <li>PORTFOLIO</li>
               </Link>
               <Link to="./faq" onClick={animateHamburger}>
@@ -178,11 +246,19 @@ function Navbar() {
               <Link to="./contact" onClick={animateHamburger}>
                 <li>CONTACT</li>
               </Link>
+<<<<<<< HEAD
               <div className={'book-insta-container'}>
                 <BtnBookNow />
                 <BtnInstagram />
               </div>
               {token ? (
+=======
+              <div className="book-insta-container">
+                <BtnBookNow />
+                <BtnInstagram />
+              </div>
+              {/* {token ? (
+>>>>>>> d1bd911 (Initial commit)
                 <>
                   <Link to="./admin" onClick={animateHamburger}>
                     <li>ADMIN</li>
@@ -191,7 +267,11 @@ function Navbar() {
                     <BtnLogout />
                   </Link>
                 </>
+<<<<<<< HEAD
               ) : null}
+=======
+              ) : null} */}
+>>>>>>> d1bd911 (Initial commit)
             </ul>
           </div>
         </div>

@@ -33,48 +33,6 @@
 }
 
 .HomePage {
-<<<<<<< HEAD
-  // LEFTOFF
-  // - edit beauty photos (reupload all in exact order + remove the shit one and replace with another of that blonde chick) (consu think i forgotten exactly what this is meant to be)
-  // - move logo to left on mobile
-
-  .main-img-container {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    
-    .main-img {
-      margin-top: -17vw;
-  
-      @include bp(sortOfSmall) {
-        margin-top: -10vw;
-      }
-  
-      @include bp(smallScreen) {
-        margin-top: -5vw;
-      }
-  
-      @include bp(bigTablet) {
-        margin-top: 5vw;
-      }
-  
-      @include bp(tablet) {
-        margin-top: 10vw;
-      }
-  
-      @include bp(mobile) {
-        margin-top: 20vw;
-      }
-  
-      @include bp(sortOfSmallMobile) {
-        margin-top: 23vw;
-      }
-
-      width: 100%;
-    }
-  }
-
-=======
   .main-img-container {
     position: relative;
     display: flex;
@@ -107,7 +65,6 @@
   }
 
 
->>>>>>> d1bd911 (Initial commit)
   .article-background {
     height: calc(100vh - 95px);
     display: flex;
@@ -171,17 +128,10 @@
     }
 
     &.fade-in-anim {
-<<<<<<< HEAD
-      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: fadein 2s; /* Firefox < 16 */
-      -ms-animation: fadein 2s; /* Internet Explorer */
-      -o-animation: fadein 2s; /* Opera < 12.1 */
-=======
       -webkit-animation: fadein 2s;
       -moz-animation: fadein 2s;
       -ms-animation: fadein 2s;
       -o-animation: fadein 2s;
->>>>>>> d1bd911 (Initial commit)
       animation: fadein 1s;
       opacity: 1;
     }
@@ -192,17 +142,10 @@
 
       &.slide-in-anim {
         position: relative;
-<<<<<<< HEAD
-        -webkit-animation: slidein 2s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: slidein 2s; /* Firefox < 16 */
-        -ms-animation: slidein 2s; /* Internet Explorer */
-        -o-animation: slidein 2s; /* Opera < 12.1 */
-=======
         -webkit-animation: slidein 2s;
         -moz-animation: slidein 2s;
         -ms-animation: slidein 2s;
         -o-animation: slidein 2s;
->>>>>>> d1bd911 (Initial commit)
         animation: slidein 1s;
       }
     }
@@ -227,33 +170,19 @@
 
       &.slide-in-anim {
         position: relative;
-<<<<<<< HEAD
-        -webkit-animation: slidein 2s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: slidein 2s; /* Firefox < 16 */
-        -ms-animation: slidein 2s; /* Internet Explorer */
-        -o-animation: slidein 2s; /* Opera < 12.1 */
-=======
         -webkit-animation: slidein 2s;
         -moz-animation: slidein 2s;
         -ms-animation: slidein 2s;
         -o-animation: slidein 2s;
->>>>>>> d1bd911 (Initial commit)
         animation: slidein 1s;
       }
 
       &.slide-in-rev-anim {
         position: relative;
-<<<<<<< HEAD
-        -webkit-animation: slidein 2s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: slidein 2s; /* Firefox < 16 */
-        -ms-animation: slidein 2s; /* Internet Explorer */
-        -o-animation: slidein 2s; /* Opera < 12.1 */
-=======
         -webkit-animation: slidein 2s;
         -moz-animation: slidein 2s;
         -ms-animation: slidein 2s;
         -o-animation: slidein 2s;
->>>>>>> d1bd911 (Initial commit)
         animation: slideinrev 1s;
       }
     }
@@ -279,33 +208,19 @@
 
       &.slide-in-anim {
         position: relative;
-<<<<<<< HEAD
-        -webkit-animation: slidein 1s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: slidein 1s; /* Firefox < 16 */
-        -ms-animation: slidein 1s; /* Internet Explorer */
-        -o-animation: slidein 1s; /* Opera < 12.1 */
-=======
         -webkit-animation: slidein 1s;
         -moz-animation: slidein 1s;
         -ms-animation: slidein 1s;
         -o-animation: slidein 1s;
->>>>>>> d1bd911 (Initial commit)
         animation: slidein 1s;
       }
 
       &.slide-in-rev-anim {
         position: relative;
-<<<<<<< HEAD
-        -webkit-animation: slidein 1s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: slidein 1s; /* Firefox < 16 */
-        -ms-animation: slidein 1s; /* Internet Explorer */
-        -o-animation: slidein 1s; /* Opera < 12.1 */
-=======
         -webkit-animation: slidein 1s;
         -moz-animation: slidein 1s;
         -ms-animation: slidein 1s;
         -o-animation: slidein 1s;
->>>>>>> d1bd911 (Initial commit)
         animation: slideinrev 1s;
       }
     }
@@ -362,11 +277,6 @@
     }
 
     h1 {
-<<<<<<< HEAD
-      // can't figure out why this is needed to get it centered.
-      // can't fix with flexbox or text-align...
-=======
->>>>>>> d1bd911 (Initial commit)
       padding-left: 11px;
 
       @include bp(smallScreen) {
@@ -378,29 +288,8 @@
       }
     }
 
-<<<<<<< HEAD
-    .BtnBookNow {
-      margin-top: 70px;
-
-      @include bp(tablet) {
-        margin-top: 50px;
-      }
-
-      @include bp(mobile) {
-        margin-top: 30px;
-      }
-
-      @include bp(smallMobile) {
-        margin-top: 20px;
-      }
-    }
   }
 }
-
-=======
-  }
-}
->>>>>>> d1bd911 (Initial commit)
 @keyframes slidein {
   from {
     right: -25px;
@@ -410,49 +299,6 @@
   }
 }
 
-<<<<<<< HEAD
-/* Firefox < 16 */
-@-moz-keyframes slidein {
-  from {
-    right: -25px;
-  }
-  to {
-    right: 0px;
-  }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes slidein {
-  from {
-    right: -25px;
-  }
-  to {
-    right: 0px;
-  }
-}
-
-/* Internet Explorer */
-@-ms-keyframes slidein {
-  from {
-    right: -25px;
-  }
-  to {
-    right: 0px;
-  }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes slidein {
-  from {
-    right: -25px;
-  }
-  to {
-    right: 0px;
-  }
-}
-
-=======
->>>>>>> d1bd911 (Initial commit)
 @keyframes slideinrev {
   from {
     left: -25px;
@@ -461,46 +307,3 @@
     left: 0px;
   }
 }
-<<<<<<< HEAD
-
-/* Firefox < 16 */
-@-moz-keyframes slideinrev {
-  from {
-    left: -25px;
-  }
-  to {
-    left: 0px;
-  }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes slideinrev {
-  from {
-    left: -25px;
-  }
-  to {
-    left: 0px;
-  }
-}
-
-/* Internet Explorer */
-@-ms-keyframes slideinrev {
-  from {
-    left: -25px;
-  }
-  to {
-    left: 0px;
-  }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes slideinrev {
-  from {
-    left: -25px;
-  }
-  to {
-    left: 0px;
-  }
-}
-=======
->>>>>>> d1bd911 (Initial commit)

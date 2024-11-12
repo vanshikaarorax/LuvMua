@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import {useDispatch} from 'react-redux';
 import './BtnLogout.scss';
 
@@ -13,6 +14,14 @@ function BtnLogout() {
 
   return (
     <button className="BtnLogout btn" onClick={logOut}>Log out</button>
+=======
+
+import './BtnLogout.scss';
+
+function BtnLogout() {
+  return (
+    <div>Logout</div>
+>>>>>>> d1bd911 (Initial commit)
   );
 }
 

@@ -6,7 +6,11 @@ import './BtnInstagram.scss';
 function BtnInstagram() {
   return (
     <Link className="BtnInstagram" to="/instagram"><FaInstagram /></Link>
+<<<<<<< HEAD
   )
+=======
+  );
+>>>>>>> d1bd911 (Initial commit)
 }
 
 export default BtnInstagram;
